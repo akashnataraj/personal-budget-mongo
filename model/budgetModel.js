@@ -12,9 +12,12 @@ var budgetSchema = new mongoose.Schema({
         unique: false
     },
     color: {
-        type: String,
-        required: true,
-        unique: false
+      type: String,
+      required: true,
+      //1:# + 6:Hexcode
+      minlength: 7,
+      maxlength: 7,
+      unique: false,
     }
 }, {collection: 'budget'});
 
