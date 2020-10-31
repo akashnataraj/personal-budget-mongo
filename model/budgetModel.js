@@ -19,9 +19,16 @@ var budgetSchema = new mongoose.Schema(
       minlength: 7,
       maxlength: 7,
       unique: false,
+<<<<<<< HEAD
     },
   },
   { collection: "budget" }
 );
 
 module.exports = mongoose.model("Budget", budgetSchema);
+=======
+    }
+}, {collection: 'budget'});
+
+module.exports = mongoose.model('Budget', budgetSchema);    
+>>>>>>> 3ae98cdb25ded4595c9d2882b267b77fdb5bfa25
