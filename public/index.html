@@ -199,9 +199,8 @@
         
         var color = d3.scale
           .ordinal()
-          .domain([dataSource.datasets.label])
-          .range(dataSource.datasets[0].backgroundColor
-          );
+          .domain(dataSource.labels)
+          .range(dataSource.datasets[0].backgroundColor);
 
           /* ------- PIE SLICES -------*/
           var slice = svg
